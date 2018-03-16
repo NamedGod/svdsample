@@ -1,3 +1,7 @@
+## Based on 2.3 of OFFLINE BILINGUAL WORD VECTORS, 
+## ORTHOGONAL TRANSFORMATIONS AND THE INVERTED SOFTMAX 
+## (https://openreview.net/pdf?id=r1Aab85gg)
+
 import numpy as np
 import scipy.linalg as linalg
 
@@ -19,7 +23,7 @@ def subtractMean(matrix):
 X = np.loadtxt("testmatrix1.txt")
 Y = np.loadtxt("testmatrix2.txt")
 
-# Random rotatig matrix
+# Random rotating matrix
 M_rotate = np.array([[-0.44397795,  0.2671975 , -0.6733675 ,  0.29900409, -0.43435221],
        [-0.50094984, -0.35522826,  0.4676279 ,  0.63572622,  0.00620209],
        [-0.38569981,  0.2544876 , -0.20820321, -0.01698669,  0.86187853],
